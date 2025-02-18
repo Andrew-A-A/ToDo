@@ -1,0 +1,18 @@
+{
+  "generator-ui5-app": {
+    "namespace": "com.andew.todo",
+    "framework": "SAPUI5",
+    "frameworkVersion": "1.132.1",
+    "author": "Andrew",
+    "initrepo": false,
+    "appId": "com.andew.todo",
+    "appURI": "com/andew/todo",
+    "cdnDomain": "ui5.sap.com",
+    "defaultTheme": "sap_horizon",
+    "qunitCoverageFile": "qunit-coverage-istanbul.js",
+    "gte1_98_0": true,
+    "gte1_104_0": true,
+    "lt1_124_0": false,
+    "setupCompleted": true
+  }
+}

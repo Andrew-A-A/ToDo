@@ -1,0 +1,29 @@
+<mvc:View
+	controllerName="com.andew.todo.controller.Main"
+	displayBlock="true"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	core:require="{
+		formatter: 'com/andew/todo/model/formatter'
+	}">
+	<Page
+		class="sapUiResponsiveContentPadding"
+		title="ToDo App"
+		titleAlignment="Center"
+		id="page">
+		<content>
+			<HBox justifyContent="Center" alignItems="Center" backgroundDesign="Solid">
+				<Label text="Title" showColon="true" design="Bold" /> 
+				<Input id="title_input"/> 
+				<Button id="add_task_btn" text="Add Task" press="onAddTask"/>
+			</HBox>
+			<List id="taskList" items="{/Task}"  width="auto">
+				<InputListItem label="{title}">
+					<CheckBox selected="{isDone}" select="onTaskToggle"/>
+					<Button icon="sap-icon://delete" press="onDeleteTask"/>
+				</InputListItem>
+			</List>
+		</content>
+	</Page>
+</mvc:View>
